@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Receipt</title>
+    <style>
+        body{
+            background-color: #eeeee4;
+        }
+        .brand-logo{
+            width: 100px;
+            display: block;
+            margin :0 auto;
+
+        }
+        .brand-title{
+            text-align: center;
+        }
+        .recipt-container{
+            width: 1000px;
+            border: 1px solid gray;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .receipt-header{
+            border-bottom: 1px dashed gray;
+        }
+        .brand-address{
+            text-align: right;
+        }
+        .receipt-title{
+            text-align: center;
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        .receipt-body{
+            position: relative;
+            border: 1px dashed grey;
+            
+        }
+        .receipt-detail{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+       
+        .receipt-detail-key{
+            color:gray;
+            width: 30%;
+        }
+        .receipt-detail-value{
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 100px;
+        }
+        .brand-contact{
+            text-align: right;
+        }
+        .accountant-sign{
+            text-align: right;
+            margin-top: 100px;
+        }
+        .stamp{
+            width: 100px;
+            position: absolute;
+            right: 0;
+            bottom: 60px;
+            transform: rotate(-20deg);
+        }
+        .receipt-footer{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            background-color: #ffca39;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="recipt-container">
+        
+        <div class="receipt-header">
+            <img class="brand-logo"  src="./images.jpg"/>
+            <h2 class="brand-title">Hindustan Petrolium</h2>
+            <p class="brand-address">441801, At.Post.soni <br/>Taluka.Goregaon<br/> Dist.Gondia</p>
+            <a href="tel">  <p class="brand-contact">+91-9325403055</p></a>
+        </div>
+
+        <div class="receipt-body">
+           <h3 class="receipt-title">Payment Receipt</h3>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Receipt No. :
+                </div>
+                <div  class="receipt-detail-value">
+                    123456789
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Amount. :
+                </div>
+                <div  class="receipt-detail-value">
+                   4000/-
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Payment Date. :
+                </div>
+                <div  class="receipt-detail-value">
+                    07/01/2024
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Payment Mode. :
+                </div>
+                <div  class="receipt-detail-value">
+                   UPI
+                </div>
+            </div>
+            <img class="stamp" src="./images.jpg"/>
+            <p class="accountant-sign">Accountant Signature</p>
+            <br/><br/><br/>
+            </div>
+            <p class="">This is a computer generated receipt and does not required any sign</p>
+        <div class="receipt-footer">
+           Thank you for giving Payment
+        </div>
+    </div>
+</body>
+</html>
